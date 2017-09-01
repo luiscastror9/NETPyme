@@ -11,7 +11,8 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DB_A2A1BA_basePymeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="DB_A2A1BA_basePymeEntities" annotation:LazyLoadingEnabled="true" />
+        <EntityContainer Name="DB_A2A1BA_basePymeEntities" annotation:LazyLoadingEnabled="true" >
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
