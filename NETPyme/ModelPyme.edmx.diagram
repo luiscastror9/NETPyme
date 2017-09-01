@@ -5,6 +5,21 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="f1a90eba2bf14b75847cb43b1522d104" Name="Diagram1" >
+        <EntityTypeShape EntityType="DB_A2A1BA_basePymeModel.Usuarios" Width="1.5" PointX="4.875" PointY="0.625" />
+        <EntityTypeShape EntityType="DB_A2A1BA_basePymeModel.Pymes" Width="1.5" PointX="2.375" PointY="1.375" />
+        <EntityTypeShape EntityType="DB_A2A1BA_basePymeModel.Colaboradores" Width="1.5" PointX="7.375" PointY="1.875" />
+        <AssociationConnector Association="DB_A2A1BA_basePymeModel.UsuariosPymes" />
+        <AssociationConnector Association="DB_A2A1BA_basePymeModel.UsuariosColaboradores" />
+        <EntityTypeShape EntityType="DB_A2A1BA_basePymeModel.Micro" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="DB_A2A1BA_basePymeModel.Pequena" Width="1.5" PointX="2.75" PointY="3.625" />
+        <EntityTypeShape EntityType="DB_A2A1BA_basePymeModel.Mediana" Width="1.5" PointX="4.375" PointY="3.875" />
+        <EntityTypeShape EntityType="DB_A2A1BA_basePymeModel.Profesionales" Width="1.5" PointX="6.75" PointY="3.875" />
+        <EntityTypeShape EntityType="DB_A2A1BA_basePymeModel.Estudiantes" Width="1.5" PointX="9" PointY="3.875" />
+        <AssociationConnector Association="DB_A2A1BA_basePymeModel.ColaboradoresProfesionales" />
+        <AssociationConnector Association="DB_A2A1BA_basePymeModel.ColaboradoresEstudiantes" />
+        <AssociationConnector Association="DB_A2A1BA_basePymeModel.PymesMicro" />
+        <AssociationConnector Association="DB_A2A1BA_basePymeModel.PymesPequena" />
+        <AssociationConnector Association="DB_A2A1BA_basePymeModel.PymesMediana" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
