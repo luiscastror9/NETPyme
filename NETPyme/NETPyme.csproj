@@ -200,17 +200,11 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InfoController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ModelPyme.Context.cs" />
-    <Compile Include="ModelPyme.Context1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelPyme.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelPyme.cs" />
     <Compile Include="ModelPyme.Designer.cs">
       <DependentUpon>ModelPyme.edmx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -271,14 +265,31 @@
     <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\img\arrow-blue-hi.png" />
+    <Content Include="Content\img\pym.jpg" />
+    <Content Include="Content\img\pyme1.jpg" />
+    <Content Include="Content\img\pymes.jpg" />
+    <Content Include="Content\img\registroPyme-2.JPG" />
+    <Content Include="Content\img\registroPyme.JPG" />
+    <Content Include="Content\img\right-arrow-blue.png" />
+    <Content Include="Content\ios7-help-outline.png" />
+    <Content Include="Content\ios7-person-outline.png" />
+    <Content Include="Content\newcss.css" />
+    <Content Include="Content\Sin título.png" />
+    <Content Include="Content\sss\images\arr.png" />
+    <Content Include="Content\sss\license.txt" />
+    <Content Include="Content\sss\sss.css" />
+    <Content Include="Content\sss\sss.js" />
+    <Content Include="Content\sss\sss.min.js" />
+    <Content Include="Content\svg1.png" />
+    <Content Include="Content\svg2.png" />
+    <Content Include="Content\svg3.png" />
+    <Content Include="Content\svg4.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="ModelPyme.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelPyme.Context1.cs</LastGenOutput>
-    </Content>
     <Content Include="ModelPyme.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelPyme1.cs</LastGenOutput>
@@ -287,6 +298,22 @@
     <Content Include="obj\Debug\TempPE\ModelPyme.cs.dll" />
     <Content Include="obj\Debug\TempPE\ModelPyme.Designer.cs.dll" />
     <Content Include="obj\Debug\TempPE\ModelPyme1.cs.dll" />
+    <Content Include="Pyme\nbproject\private\private.xml" />
+    <Content Include="Pyme\nbproject\project.xml" />
+    <Content Include="Pyme\public_html\bootstrap.css" />
+    <Content Include="Pyme\public_html\bootstrap.min.css" />
+    <Content Include="Pyme\public_html\favicon.ico" />
+    <Content Include="Pyme\public_html\index.html" />
+    <Content Include="Pyme\public_html\ios7-help-outline.png" />
+    <Content Include="Pyme\public_html\ios7-person-outline.png" />
+    <Content Include="Pyme\public_html\jquery-3.2.1.min.js" />
+    <Content Include="Pyme\public_html\newcss.css" />
+    <Content Include="Pyme\public_html\newjavascript.js" />
+    <Content Include="Pyme\public_html\Sin título.png" />
+    <Content Include="Pyme\public_html\svg1.png" />
+    <Content Include="Pyme\public_html\svg2.png" />
+    <Content Include="Pyme\public_html\svg3.png" />
+    <Content Include="Pyme\public_html\svg4.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -302,15 +329,19 @@
     <Content Include="obj\Debug\build.force" />
     <Content Include="obj\Debug\CoreCompileInputs.cache" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Pyme\nbproject\private\private.properties" />
+    <Content Include="Pyme\nbproject\project.properties" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\newjavascript.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Web.config" />
@@ -347,6 +378,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Info\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
