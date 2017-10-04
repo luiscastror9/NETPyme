@@ -26,5 +26,23 @@ namespace NETPyme.Controllers
 
 			return View();
 		}
+		public ActionResult Comit()
+		{
+			ViewBag.Message = "Your contact page.";
+
+			return View();
+		}
+		public ActionResult Noticias()
+		{
+			ViewBag.Message = "Your contact page.";
+
+			return View();
+		}
+		public ActionResult cambio()
+		{
+			ViewBag.Message = "Your contact page.";
+
+			return View();
+		}
 	}
 }

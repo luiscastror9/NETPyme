@@ -1,0 +1,334 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*INDEX de HOME*/
+
+/*TITULO: ECOLOGIA*/
+
+#titulo {
+	font-family: 'Audiowide', cursive;
+	font-size: 13rem;
+	text-align: center;
+	background-color: white;
+}
+/*FIN TITULO: ECOLOGIA*/
+
+/*BOTONES DE INICIO*/
+.infomas {
+	width: 100%;
+	height: 200%;
+	background-color: white;
+}
+
+.h5info {
+	padding: 3%;
+	font-family: 'Rock Salt', cursive;
+	font-size: 3em;
+	text-align: center;
+}
+
+.tab2 {
+	width: 70%;
+	height: 12%;
+}
+
+.tab1 {
+	border-collapse: separate;
+	border-spacing: 0.7em;
+}
+
+.td1 {
+	padding: 3%;
+	width: 15%;
+	height: 28%;
+	border: solid;
+	border-width: thin;
+	border-color: lightgrey;
+	background-color: white;
+	text-align: center;
+	font-family: 'Coming Soon', cursive;
+	font-size: 1.3em;
+}
+
+.h5infoo {
+	min-height: 10%;
+	min-width: 25%;
+	border: none;
+	background-color: white;
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+/*FIN DE BOTONES DE INICIO*/
+
+/*COLUMNAS*/
+.histo {
+	width: 100%;
+	height: 600px;
+	background-color: ghostwhite;
+	box-sizing: border-box;
+}
+
+.histcomp {
+	font-family: 'Bungee Shade', cursive;
+	font-size: 2.3em;
+	text-align: center;
+}
+
+.hist {
+	margin: auto;
+	margin-top: 0.5%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	box-sizing: border-box;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+/*FIN COLUMNAS*/
+
+/*CONTEO*/
+.tomate {
+	width: 100%;
+	height: 560px;
+	background-image: url(Pinterest/planet_earth-wide.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.h3fiesta {
+	margin: 20%;
+	position: absolute;
+	font-family: 'Monoton', cursive;
+	color: red;
+	font-size: 4rem;
+	text-align: center;
+}
+/*FIN CONTEO*/
+
+/*MAPA IMPACTO*/
+.mapacal {
+	margin-top: 1%;
+	width: 100%;
+	height: 700px;
+	background-color: black;
+}
+/*FIN MAPA IMPACTO*/
+
+/*TARJETAS*/
+.mapacal1 {
+	margin: 50px auto;
+	max-width: 1200px;
+	background-color: snow;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contenedortarjeta {
+	margin: 5%;
+}
+
+.contenedortarjeta a {
+	display:inline-block;
+	}
+
+.contenedortarjeta:hover figure {
+		-webkit-transform: perspective(600px) rotateY(180deg);
+		-ms-transform: perspective(600px) rotateY(180deg);
+		-o-transform: perspective(600px) rotateY(180deg);
+		transform: perspective(600px) rotateY(180deg);
+
+		-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.25);
+		-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.25);
+		box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.25);
+	}
+
+a {
+	text-decoration: none;
+}
+
+figure {
+	width: 250px;
+	height: 300px;
+	margin: 0;
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal, figure .atras {
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
+		transition: all ease .5s;
+	}
+
+figure .frontal {
+		display: block;
+		/*backface-visibility: hidden;*/
+	}
+
+figure .atras {
+		position: absolute;
+		top: 0;
+		padding: 20px;
+		color: white;
+		transform: perspective(600px) rotateY(180deg);
+		backface-visibility: hidden;
+		overflow: auto;
+	}
+
+.contenedortarjeta:nth-child(1, 4) figure .atras {
+	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.contenedortarjeta:nth-child(2, 5) figure .atras {
+	background: rgba(233,212,179,1);
+	background: -moz-linear-gradient(top, rgba(233,212,179,1) 0%, rgba(106,70,24,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(233,212,179,1)), color-stop(100%, rgba(106,70,24,1)));
+	background: -webkit-linear-gradient(top, rgba(233,212,179,1) 0%, rgba(106,70,24,1) 100%);
+	background: -o-linear-gradient(top, rgba(233,212,179,1) 0%, rgba(106,70,24,1) 100%);
+	background: -ms-linear-gradient(top, rgba(233,212,179,1) 0%, rgba(106,70,24,1) 100%);
+	background: linear-gradient(to bottom, rgba(233,212,179,1) 0%, rgba(106,70,24,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9d4b3', endColorstr='#6a4618', GradientType=0 );
+}
+
+.contenedortarjeta:nth-child(3) figure .atras {
+	filter: blur(2px);
+}
+
+
+	figure .atras .titulo66 {
+		color: white;
+		margin-bottom: 4%;
+        font-family: 'Coming Soon', cursive;
+		font-weight: normal;
+		font-size: 2rem;
+	}
+
+figure .atras hr {
+	height: 2px;
+	background: #FFF;
+	border: none;
+	margin-bottom: 4%;
+	opacity: .5;
+	}
+
+@media screen and (max-width: 992px) {
+	figure .atras {
+		backface-visibility: visible;
+		transform: perspective(600px) rotateY(0deg);
+	}
+
+	.contenedortarjeta:hover figure {
+		transform: perspective(600px) rotateY(0deg);
+	}
+}
+/*FIN TARJETAS*/
+
+/*BOTONES*/
+.foot {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+}
+
+.btn {
+	width: 10%;
+}
+/*FIN BOTONES*/
+
+/*FIN INDEX*/
+
+/*LOGIN DE ACCOUNT*/
+
+
+/*FIN LOGIN DE ACCOUNT*/
+
+/*ABOUT.CSHOTML* con SCROLL
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+section#contenedor_general {
+	position: fixed;
+	width: 100%;
+	min-height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	background-image: url(Pinterest/spring-backgrounds-19091-19580-hd-wallpapers.jpg);
+	background-size: cover;
+	background-position: center 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+section#body {
+	width: 100%;
+	min-height: 300px;
+	overflow: hidden;
+}
+
+section#scrolldown {
+	margin: auto;
+	width: 200px;
+	height: 60px;
+}
+
+p#titulo {
+	text-align: center;
+	font-weight: lighter;
+	font-size: 1.5em;
+	color: white;
+}
+
+p#menorque {
+	-webkit-transform: rotate(270deg);
+	text-align: center;
+	color: white;
+	font-size: 1.3em;
+}
+
+section#seccion {
+	width: 100%;
+	height: 400px;
+	margin-top: 20px;
+	background-color: white;
+}
+
+
+
+
+/*FIN DE ABOUT*/
+
+#parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(Pinterest/spring-backgrounds-19091-19580-hd-wallpapers.jpg);
+	height: 100%;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+	.bgimg-1, .bgimg-2, .bgimg-3 {
+		background-attachment: scroll;
+	}
+}
